@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 
 import config
-from Flexyy import app  # inner folder
+from main import app
 
 @app.on_message(filters.command("update") & filters.user(config.OWNER_ID))
 async def update_bot(client, message):
