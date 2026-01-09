@@ -1,0 +1,48 @@
+{
+  "name": "Flexyy Bot !!",
+  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
+  "logo": "https://telegra.ph/file/c53d9a7df9dbaa5f4db05.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Get this value from @BotFather",
+             "value": "",
+            "required": true
+        },  
+        "MUST_JOIN": {
+            "description": "Username of a group or channel for which you want to set force sub.(without @)",
+            "value": "ScriptFlix_Bots",
+            "required": true      
+        }, 
+        "MONGO_URL": {
+            "description": "mongo db url here",
+            "value": "",
+            "required": true
+        },
+        "API_ID": {
+            "description": "telegram api id here",
+            "value": "21803165",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Telegram id of the person who will known as owner of the bot.",
+            "value": "8561360797",
+            "required": true
+        }, 
+        "API_HASH": {
+            "description": "telegram api hash here",
+            "value": "05e5e695feb30e25bef47484cc006da7",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
